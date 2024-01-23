@@ -1,61 +1,103 @@
-/*
-Colors:
-
-Text: 1A1A1A
-Green: #00B172
-White: #FFF
-
-*/
-
-img {
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+  }
+  
+  header {
+    background-color: black;
+    color: white;
+    position: fixed;
     width: 100%;
-}
-
-.menu {
+    top: 0;
+    z-index: 10;
+  }
+  
+  nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
-}
-
-.menu img {
-    width: 100px;
-}
-
-.menu ul {
-    display: flex;
+    padding: 10px 20px;
+  }
+  
+  nav img {
+    width: 120px;
+  }
+  
+  nav ul {
     list-style: none;
-}
-
-.menu li {
-    margin-right: 20px;
+    display: flex;
+  }
+  
+  nav ul li {
+    padding: 0 10px;
+  }
+  
+  nav ul li a {
+    color: white;
     text-decoration: none;
-}
-
-.container-menu {
+  }
+  
+  .hero {
+    background-image: url('/images/landing.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
     display: flex;
-}
-
-.menu-2 {
-    display: flex;
-}
-
-.menu-1 article {
-    width: 15%;
-}
-
-.container-menu {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding-top: 60px; /* Offset for fixed navbar */
+  }
+  
+  .features {
     display: flex;
     justify-content: space-around;
-    align-items: center;
-}
-
-.menu_main {
-    height: 500px;
-    background-image: url(../images/landing.jpg);
-    background-size: 1500px;
-    background-position: center;
-    background-repeat: no-repeat;
-    color: white;
+    margin: 20px 0;
+    padding: 20px;
+  }
+  
+  .feature {
+    width: 30%;
     text-align: center;
-}
+  }
+  
+  .feature img {
+    width: 100px; /* Adjust as necessary */
+    margin-bottom: 10px;
+  }
+  
+  .kanye {
+    background-color: #1DB954;
+    color: white;
+    padding: 50px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  
+  .kanye .text-content {
+    width: 50%;
+  }
+  
+  .kanye .spotify-player img {
+    width: 300px; /* Adjust as necessary */
+  }
+  
+  footer {
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+  }
+
+  
+  
+  /* Add more styling as needed */
